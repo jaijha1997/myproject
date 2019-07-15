@@ -12,6 +12,11 @@ import { ResetpwComponent } from './resetpw/resetpw.component';
 
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { BindingComponent } from './binding/binding.component';
+import { JoinComponent } from './join/join.component';
+
+
+
 const routes: Routes = [
   {path:'header', component:HeaderComponent},
   {path:'footer', component:FooterComponent},
@@ -23,7 +28,12 @@ const routes: Routes = [
   {path:'login/sign up', component:SignupComponent},
   {path:'login/forgot password/resetpw', component:ResetpwComponent},
   {path:'login/admindashboard', component:AdmindashboardComponent},
+  {path:'binding',component:BindingComponent},
+  {path:'join',component:JoinComponent},
+ 
+ 
   {path:'**',component:PagenotfoundComponent},
+
 
 
   {path:'', redirectTo:'home',pathMatch:'full'}

@@ -15,6 +15,11 @@ import { ResetpwComponent } from './resetpw/resetpw.component';
 
 import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { BindingComponent } from './binding/binding.component';
+
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { JoinComponent } from './join/join.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +34,17 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     SignupComponent,
     ResetpwComponent,
     AdmindashboardComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    BindingComponent,
+    JoinComponent,
+ 
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
